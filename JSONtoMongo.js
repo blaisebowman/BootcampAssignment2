@@ -18,12 +18,8 @@ mongoose.connect(config.db.uri, {useNewUrlParser: true});
   Instantiate a mongoose model for each listing object in the JSON file, 
   and then save it to your Mongo database 
   //see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
-
   Remember that we needed to read in a file like we did in Bootcamp Assignment #1.
  */
-var wtf = require('wtfnode'); ////////////////
-// ////////
-
 fs.readFile('listings.json', 'utf8', function (err, data) { //used to read listings.json file
     if (err) {
         throw err; //throws error
@@ -45,7 +41,6 @@ fs.readFile('listings.json', 'utf8', function (err, data) { //used to read listi
         });
     });
 });
-wtf.dump(); /////////////////////////////////////////////
 //process.exit();
 /*  
   Check to see if it works: Once you've written + run the script, check out your MongoLab database to ensure that 
