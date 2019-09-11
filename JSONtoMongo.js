@@ -1,3 +1,4 @@
+//Blaise Bowman CEN3031 Fall 2019 Bootcamp Assignment 2
 /*
   Import modules/files you may need to correctly run the script. 
   Make sure to save your DB's uri in the config file, then import it with a require statement!
