@@ -6,9 +6,7 @@
 
 var fs = require('fs'),
     mongoose = require('mongoose'),
-    //Schema = mongoose.Schema,
     Listing = require('./ListingSchema.js'),
-    //listings = require('./listings.json'),
     config = require('./config.js');
 mongoose.set('useCreateIndex', true);
 mongoose.set('useFindAndModify', false);
@@ -55,6 +53,7 @@ var updatePhelpsLab = function () {
         console.log(data);
     });
 };
+
 var retrieveAllListings = function () {
     /*
       Retrieve all listings in the database, and log them to the console.
@@ -74,10 +73,8 @@ var retrieveAllListings = function () {
         })
 
 };
+
 findLibraryWest();
 removeCable();
-
-//ensure removeCable() prints before updatePhelpsLab()
-
 updatePhelpsLab();
 retrieveAllListings();
